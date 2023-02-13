@@ -1,0 +1,16 @@
+.header__logo{
+	display: inline-block;
+	a {
+		display: flex;
+		align-items: center;
+	}
+	img{
+		transition: transform 500ms;
+		width: 50px;
+	}
+	&:hover{
+		img{
+			transform: rotateY(180deg);
+		}
+	}
+}
