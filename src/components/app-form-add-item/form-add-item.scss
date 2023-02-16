@@ -1,8 +1,19 @@
 .app__form-add-item{
 	display: flex;
+	margin: 40px 0px 0px 0px;
 	input{
 		width: 100%;
 		padding: 10px;
-		border-radius: 10px;
+		border-radius: 7px;
+	}
+	button{
+		background: none;
+		border: 2px solid #00bfff;
+		transition: all 0.4s ease 0s;
+		&:hover{
+			background-color: #00bfff;
+			color: #fff;
+			border: 2px solid #00bfff;
+	}
 	}
 }

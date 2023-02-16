@@ -6,10 +6,13 @@ import HeaderStatistics from "./header-statistics/header-statistics";
 
 export default class AppHeader extends Component {
 	render() {
+		const {allPosts, liked} = this.props;
 		return (
 			<header className="header">
 				<HeaderLogo/>
-				<HeaderStatistics/>
+				<HeaderStatistics
+				allPosts={allPosts}
+				liked={liked}/>
 			</header>
 		)
 	}

@@ -1,0 +1,59 @@
+.post{
+	&__item{
+		padding: 15px;
+		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__item._like{
+		.btn__like{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&__item._important{
+		.btn__importatnt{
+		color: #FEFE22;
+		}
+	}
+	&__content{
+		display: flex;
+		flex-direction: column;
+		row-gap: 10px;
+	}
+	&__btn-group{
+		display: flex;
+		gap: 5px;
+	}
+}
+
+.content{
+	&__labele{
+		font-size: 18px;
+	}
+	&__date{
+		font-size: 14px;
+		color: grey;
+	}
+}
+
+.btn{
+	button{
+		background: none;
+	}
+	&__importatnt{
+		color: #818181;
+	}
+	&__like{
+		opacity: 0;
+		visibility: hidden;
+		color: red;
+	}
+	&__remove{
+		color: rgba(255, 0, 0, 0.5);
+	}
+}
+.cp{
+	cursor: pointer;
+}

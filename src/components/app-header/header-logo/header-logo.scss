@@ -1,16 +1,42 @@
 .header__logo{
-	display: inline-block;
 	a {
 		display: flex;
+		gap: 5px;
 		align-items: center;
+		text-decoration: none;
+		color: #000;
 	}
 	img{
 		transition: transform 500ms;
 		width: 50px;
 	}
+	h1{
+		position: relative;
+		font-weight: 600;
+		&::before{
+			content: "";
+			width: 0%;
+			height: 2px;
+			background-color: #000;
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+		}
+	}
 	&:hover{
 		img{
-			transform: rotateY(180deg);
+			transform: scale(1.2) rotateY(180deg);
 		}
+		h1{
+			&::before{
+				animation: asd .3s forwards;
+			}
+		}
+	}
+}
+
+@keyframes asd {
+	100%{
+		width: 100%;
 	}
 }
